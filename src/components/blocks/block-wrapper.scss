@@ -1,0 +1,247 @@
+.transfer-booking__block {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14);
+	border-radius: 16px 16px 16px 16px;
+	background: rgba(0, 0, 0, 0.12);
+	overflow: hidden;
+	margin-bottom: 16px;
+	.route-form__info-text {
+		font-size: 14px;
+		letter-spacing: 0.15px;
+		color: rgba(0, 0, 0, 0.56);
+		padding-top: 8px;
+	}
+	.block-wrapper__twin-element--add-profile-padding {
+		padding-top: 10px;
+		padding-bottom: 6px;
+	}
+	.block-wrapper__twin-element--profile-tool-padding {
+		padding-top: 18px;
+	}
+	.route-form__warning-text {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.15px;
+		color: #ED2840;		
+		padding-top: 10px;
+		padding-bottom: 16px;
+	}
+	.contact-form__text {		
+		font-size: 16px;
+		letter-spacing: 0.15px;
+		color: rgba(0, 0, 0, 0.56);
+		padding-top: 9px;
+	}
+	.block-wrapper__title {
+		padding: 12px 24px 11px 24px;
+		margin-bottom: 1px;
+		background-color: white;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.15px;
+		color: rgba(0, 0, 0, 0.88);
+		font-weight: 600;
+	}
+	.car-info-form__head-font {
+		padding: 12px 0 0px 0;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.15px;
+		color: rgba(0, 0, 0, 0.88);
+		font-weight: 600;
+	}
+	.block-wrapper__body {
+		padding: 5px 24px 17px 24px;
+		margin-bottom: 1px;
+		background-color: white;
+	}
+	.block-wrapper__footer {
+		padding: 5px 24px 0 24px;
+		background-color: white;	
+	}
+	.block-wrapper__twin-container {
+		display: flex;
+		&:last-child {
+			.block-wrapper__twin-element--profile-tool-padding {
+				margin-left: auto;
+				margin-right: 0 !important;
+				padding-top: 16px;
+				padding-bottom: 24px;
+			}	
+		}	
+		.block-wrapper__twin-element {
+			width: calc(50% - 12px);			
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			letter-spacing: 0.15px;
+			color: #002688;
+			&:first-child {
+				margin-right: 24px;
+			}
+		}
+		.block-wrapper__input--twin-element {
+			width: calc(50% - 12px);			
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			letter-spacing: 0.15px;
+			color: #002688;
+			&:first-child {
+				margin-right: 24px;
+			}
+		}
+		.block-wrapper__input--fixed-width {
+			width: 112px !important;
+		}
+		.block-wrapper__input--calc-width {
+			width: calc(100% - 128px) !important;
+			margin-right: 16px;
+		}
+	}
+	.transfer-booking__gender-button {			
+		.ant-btn {
+			width: 48px;
+			height: 48px;	
+			margin-right: 16px;
+			margin-top: 14px;
+			border: 2px solid rgba(0, 0, 0, 0.12);
+			border-radius: 4px;
+			font-size: 16px;
+		}
+	}
+	.payment-method-form {
+		&__list {
+			padding: 4px 0 0 0;
+			margin: 0;
+		}	
+		&__link {
+			display: block;
+			margin-left: 24px;
+			padding-top: 3px;
+			letter-spacing: 0.25px;
+		}
+		&__comment {
+			display: block;
+			padding: 1px 0 4px 0;
+			margin-left: 24px;
+		}
+		&__item {
+			margin: 16px 0 6px 0;
+			display: block;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.15px;
+			color: rgba(0, 0, 0, 0.88);
+		}
+	}
+	.cost-form__text {
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.25px;
+		color: rgba(0, 0, 0, 0.56);
+	}
+
+	.car-info-form {
+		&--color {
+			background-color: #f5f5f5;
+		}
+		&__bottom-head {
+			padding-top: 10px;
+		}
+		&__list {
+			padding: 0;
+			margin: 0px 0 0 0;
+
+		}
+		&__item {
+			padding: 4px 0 4px 0; 
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.25px;			
+		}	
+	}
+	.cost-form__count {
+		font-weight: 600;
+		padding: 7px 0 0 0;
+		font-size: 24px;
+		line-height: 35px;
+		color: rgba(0, 0, 0, 0.88);
+	}
+	.block-wrapper__body{
+		.car-info-form__justify-position {
+			display: block;
+			margin-top: 5px;
+		}
+		&:last-child {
+			.car-info-form__justify-position {
+				margin-top: 0;
+			}
+		}
+	}
+	@media (max-width: 940px) {
+		.car-info-form__justify-position {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start; 
+			margin-top: 5px;
+		}
+		.car-info-form__list {
+			width: calc(50% - 12px);
+		}
+	}
+	@media (max-width: 640px) {
+		.block-wrapper__twin-container {
+			display: block;
+			.block-wrapper__twin-element {
+				width: 100%;
+			}	
+			.block-wrapper__input--twin-element	 {
+				width: 100%;
+			}	
+		}
+		.car-info-form__justify-position {
+			display: block;
+			margin-top: 5px;
+		}
+		.car-info-form__list {
+			width: 100%;
+		}
+	}	
+	.ant-checkbox-wrapper {
+		padding-bottom: 7px;
+		margin-top: 18px;
+		font-size: 16px;
+		letter-spacing: 0.15px;		
+	}
+	.accept-booking-form__button {
+		width: 100%;
+		height: 48px;
+		margin: 17px 0 7px 0;
+		border-radius: 50px;
+		border: none;
+		outline: none;
+		letter-spacing: 0.6px;
+		text-transform: uppercase;
+		&:active { 
+			background: #002688;
+			color: #FFFFFF;
+		}
+	}
+
+	.burger-menu__icon {
+		position: absolute;
+	}
+	.ant-menu {
+		width: 24px;
+		border-right: none;
+		&-submenu-arrow {
+			display: none;
+		}
+		&-submenu-title {
+			padding: 0;
+			width: 24px;
+			height: 24px;
+		}
+	}	
+}
+

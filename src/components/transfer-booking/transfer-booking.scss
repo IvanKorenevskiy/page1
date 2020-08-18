@@ -1,0 +1,39 @@
+.wrapper__transfer-booking {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+}
+.transfer-booking {
+	&__title {
+		margin: 31px 0 18px 0;
+		font-size: 40px;
+		letter-spacing: 0.25px;
+		font-weight: 600;
+	}
+	&__left-side {
+		width: 66%;		
+		margin-right: 24px;
+	}
+	&__right-side {
+		margin-top: 109px;
+		width: 32%;
+	}
+	.transfer-booking__media-screen-show {
+		display: none;
+	}
+	@media (max-width: 940px) {
+		.transfer-booking__media-screen-show {
+			display: block;
+		}
+		.transfer-booking__media-screen-hide {
+			display: none;
+		}
+		.transfer-booking__left-side {
+			width: 100%; 
+			margin-right: 0;
+		}
+		.transfer-booking__right-side {
+			display: none;		
+		}
+	}
+}

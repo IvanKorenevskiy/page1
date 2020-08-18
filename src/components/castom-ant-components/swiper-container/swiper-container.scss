@@ -1,0 +1,41 @@
+.swiper-wrapper {
+	.swiper-slide {
+    	width: auto;
+    	padding: 6px 23px 3px 23px;
+    	box-sizing: border-box;
+    	font-size: 14px;
+    	color: rgba(0, 0, 0, 0.56);
+    	letter-spacing: 0.6px;
+    	font-weight: bold;
+			&:active {
+			border: 2px solid #002688;
+			border-radius: 50px;
+			color: #002688;
+			padding: 4px 21px 1px 21px;
+		}
+    }
+}
+.swiper-container {
+	margin: 13px 0 13px 0;
+	.swiper-button-disabled {
+		opacity: 0 !important;
+	}
+	.swiper-button-prev {
+		background-color: white;
+		left: 0;	
+		&:after {
+			color: rgba(0, 0, 0, 0.56);
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+	.swiper-button-next {
+		background-color: white;
+		right: 0;	
+		&:after {
+			color: rgba(0, 0, 0, 0.56);
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}	
+}

@@ -16,10 +16,15 @@ const CastomSwiper = (props) => {
 	return (
   	<Swiper
 			slidesPerView= {'auto'}
-			spaceBetween= {4}
+			spaceBetween= {4.6}
 			navigation
 		>
-			{props.MasOfHederNavItems.map(HederNavItem => {return <SwiperSlide key={HederNavItem.id}>{HederNavItem.title}</SwiperSlide>})}	
+			{props.MasOfHederNavItems.map(HederNavItem => {
+				return (
+					<SwiperSlide key={HederNavItem.id}>
+						<a className="swiper-slide__link">{HederNavItem.title}</a>
+					</SwiperSlide>)
+			})}	
 		</Swiper>
   );    	
 }

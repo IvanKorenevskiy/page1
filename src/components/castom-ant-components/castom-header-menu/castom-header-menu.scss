@@ -1,0 +1,13 @@
+	.ant-menu {
+		width: 24px;
+		border-right: none;
+		margin-right: 24px;
+		&-submenu-arrow {
+			display: none;
+		}
+		&-submenu-title {
+			padding: 0 ;
+			width: 24px;
+			height: 24px !important;
+		}
+	}

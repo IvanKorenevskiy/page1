@@ -15,9 +15,8 @@ let MasOfHederNavItems = [
 	{id:5, title: "АЭРОЭКСПРЕСС"},
 	{id:6, title: "ВИЗЫ"},
 	{id:7, title: "СТРАХОВКИ"},
-	{id:8, title: "ЛЕНИВЫЙ"},
-	{id:9, title: "ЗАКАЗ"},
-	{id:10, title: "КОМАНДИРОВКИ"}
+	{id:8, title: "ЛЕНИВЫЙ ЗАКАЗ"},
+	{id:9, title: "КОМАНДИРОВКИ"}
 ]
 
 const Header = (props) => {

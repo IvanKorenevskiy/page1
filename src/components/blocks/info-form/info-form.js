@@ -21,7 +21,7 @@ const InfoForm = (props) => {
 	                	<AddCircle  className="transfer-booking__tool-logo"/><a>Добавить личный профиль</a>
 					</div> 
 					<div className="block-wrapper__twin-element block-wrapper__twin-element--add-profile-padding">
-	                	<AddCircle  className="transfer-booking__tool-logo"/><a>Добавить профиль компании </a>        
+	                	<AddCircle  className="transfer-booking__tool-logo"/><a>Добавить профиль компании</a>        
 					</div> 
 				</div>
 				<div className="block-wrapper__twin-container">

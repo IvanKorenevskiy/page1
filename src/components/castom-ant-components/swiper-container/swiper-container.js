@@ -19,10 +19,10 @@ const CastomSwiper = (props) => {
 			spaceBetween= {4.6}
 			navigation
 		>
-			{props.MasOfHederNavItems.map(HederNavItem => {
+			{props.items.map(NavItem => {
 				return (
-					<SwiperSlide key={HederNavItem.id}>
-						<a className="swiper-slide__link">{HederNavItem.title}</a>
+					<SwiperSlide key={NavItem.id}>
+						<a className="swiper-slide__link">{NavItem.title}</a>
 					</SwiperSlide>)
 			})}	
 		</Swiper>
@@ -30,7 +30,7 @@ const CastomSwiper = (props) => {
 }
 
 CastomSwiper.propTipes={
-	MasOfHederNavItems: PropTipes.arrayOf(PropTipes.object).isRequied
+	items: PropTipes.arrayOf(PropTipes.object).isRequied
 }
 
 export default CastomSwiper;

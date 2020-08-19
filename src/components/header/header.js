@@ -19,13 +19,21 @@ let MasOfHederNavItems = [
 	{id:9, title: "КОМАНДИРОВКИ"}
 ]
 
+let Mase = [
+	{id:1, title: "ggg"},
+	{id:2, title: "ergerg"},
+	{id:3, title: "hyrj"},
+	{id:4, title: "Тaerh"}
+]
+
+
 const Header = (props) => {
   return (
   	<div className="root__header header">
     	<div className="header__top-string">
 				<CastomHeaderMenu 
 					styles="header__burger-menu"
-					MasOfHederNavItems={MasOfHederNavItems}
+					items={MasOfHederNavItems}
 				/>
 				<Switch className="header__logo"/>
   			<ul className="header__tools-container tools-container" scroll-left="100px">
@@ -43,7 +51,7 @@ const Header = (props) => {
     			</a>
     		</ul>
     	</div>	
-			<CastomSwiper MasOfHederNavItems={MasOfHederNavItems}/>
+			<CastomSwiper items={MasOfHederNavItems}/>
     	<div className="header__background-string"></div>
 	    <div className="header__bottom-string">
     		<ArrowBack className="header__arrow-back"/>

@@ -16,14 +16,14 @@ const CastomHeaderMenu = (props) => {
         	<span><BurgerMenu className="castom-header-menu__logo"/></span>
       	}
       >
-      {props.MasOfHederNavItems.map(HederNavItem => {return <Menu.Item key={HederNavItem.id}>{HederNavItem.title}</Menu.Item>})}
+      {props.items.map(NavItem => {return <Menu.Item key={NavItem.id}>{NavItem.title}</Menu.Item>})}
       </SubMenu>
     </Menu>
    );    	
 }
 
 CastomHeaderMenu.propTipes={
-	MasOfHederNavItems: PropTipes.arrayOf(PropTipes.object).isRequied
+	items: PropTipes.arrayOf(PropTipes.object).isRequied
 }
 
 export default CastomHeaderMenu;

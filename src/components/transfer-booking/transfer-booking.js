@@ -1,61 +1,68 @@
 import React from "react";
 import "./transfer-booking.scss";
 import BlockWrapper from "../blocks/block-wrapper";
+import AcceptBookingForm from "../blocks/accept-booking-form/accept-booking-form";
+import InfoForm from "../blocks/info-form/info-form";
+import RouteForm from "../blocks/route-form/route-form";
+import ContactForm from "../blocks/contact-form/contact-form";
+import PaymentMethodForm from "../blocks/payment-method-form/payment-method-form";
+import CostForm from "../blocks/cost-form/cost-form";
+import CarInfoForm from "../blocks/car-info-form/car-info-form";
 
 let b = [
 	1, 2, 3, 4, 5
 ]
+
 const TransferBooking = (props) => {
   return (
-  	<div className="wrapper__transfer-booking transfer-booking">				
+  	<div className="transfer-booking">
 			<div className="transfer-booking__left-side">
 				<div className="transfer-booking__title">
 					Бронирование трансфера
 				</div>
 				<div className="transfer-booking__media-screen-show">
-					<BlockWrapper styles="transfer-booking__block" form="0" title="Автомобиль бизнес-класса"/>
-				</div>	
-				<BlockWrapper styles="transfer-booking__block" form="1" title="Основная информация"/>
-				<BlockWrapper styles="transfer-booking__block" form="2" title="Маршрут"/>
-				<BlockWrapper styles="transfer-booking__block" form="3" title="Контактные данные покупателя"/>
-				<div className="transfer-booking__media-screen-show">
-					<BlockWrapper styles="transfer-booking__block" form="4" title="Стоимость"/>
+					<BlockWrapper className="transfer-booking__block">
+						<CarInfoForm title="Автомобиль бизнес-класса"/>
+					</BlockWrapper>
 				</div>
-				<BlockWrapper styles="transfer-booking__block" form="5" title="Способ оплаты"/> 		
-				<BlockWrapper styles="transfer-booking__block" form="6" title=""/>
+				<BlockWrapper className="transfer-booking__block">
+					<InfoForm title="Основная информация"/>
+				</BlockWrapper>
+				<BlockWrapper className="transfer-booking__block">
+					<RouteForm title="Маршрут"/>
+				</BlockWrapper>
+				<BlockWrapper className="transfer-booking__block">
+					<ContactForm title="Контактные данные покупателя"/>
+				</BlockWrapper>
+				<div className="transfer-booking__media-screen-show">
+					<BlockWrapper className="transfer-booking__block">
+						<CostForm title="Стоимость"/>
+					</BlockWrapper>
+				</div>
+				<BlockWrapper className="transfer-booking__block">
+					<PaymentMethodForm title="Способ оплаты"/>
+				</BlockWrapper>
+				<BlockWrapper className="transfer-booking__block">
+					<AcceptBookingForm/>
+				</BlockWrapper>
 			</div>
 			<div className="transfer-booking__right-side">
-				<div className="transfer-booking__media-screen-hide"><BlockWrapper styles="transfer-booking__block" form="0" title="Автомобиль бизнес-класса"/></div>
-				<div className="transfer-booking__media-screen-hide"><BlockWrapper styles="transfer-booking__block" form="4" title="Стоимость"/></div>
+				<div className="transfer-booking__media-screen-hide">
+          <BlockWrapper className="transfer-booking__block">
+  					<CarInfoForm title="Автомобиль бизнес-класса"/>
+  				</BlockWrapper>
+        </div>
+				<div className="transfer-booking__media-screen-hide">
+          <BlockWrapper className="transfer-booking__block">
+  					<CostForm title="Стоимость"/>
+  				</BlockWrapper>
+        </div>
 			</div>
     </div>
-	);    	
+	);
 }
 
 
 
 export default TransferBooking;
 
-/*const C = () => {
-    return (
-    	<div className="transfer-booking">				
-			<div className="transfer-booking__left-side">
-				<div className="title--font">
-					Бронирование трансфера
-				</div>
-				<div className="media-screen-show"><CarInfoBlock styles="transfer-booking__block"/></div>	
-				<InfoBlock styles="transfer-booking__block"/>
-				<RouteBlock styles="transfer-booking__block"/> 
-				<ContactBlock styles="transfer-booking__block"/>
-				<div className="media-screen-show"><CostBlock/></div>
-				<PaymentMethod styles="transfer-booking__block"/> 		
-				<AcceptBookingBlock styles="transfer-booking__block"/>
-			</div>
-			<div className="transfer-booking__right-side">
-				<div className="media-screen-hide"><CarInfoBlock styles="transfer-booking__block"/></div>
-				<div className="media-screen-hide"><CostBlock styles="transfer-booking__block"/></div>
-			</div>
-	    </div>
-	);    	
-}
-*/

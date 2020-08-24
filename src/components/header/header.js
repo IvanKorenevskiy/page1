@@ -29,10 +29,10 @@ let Mase = [
 
 const Header = (props) => {
   return (
-  	<div className="root__header header">
-    	<div className="header__top-string">
+  	<div className="header">
+    	<div className="header__top-row">
 				<CastomHeaderMenu 
-					styles="header__burger-menu"
+					className="header__burger-menu"
 					items={MasOfHederNavItems}
 				/>
 				<Switch className="header__logo"/>
@@ -51,9 +51,12 @@ const Header = (props) => {
     			</a>
     		</ul>
     	</div>	
-			<CastomSwiper items={MasOfHederNavItems}/>
-    	<div className="header__background-string"></div>
-	    <div className="header__bottom-string">
+			<CastomSwiper 
+				className = "header__nav-container"
+				items={MasOfHederNavItems}
+			/>
+    	<div className="header__background-row"></div>
+	    <div className="header__bottom-row">
     		<ArrowBack className="header__arrow-back"/>
     		<span className="header__arrow-back--text">Назад к выдаче</span>
 	    	<div className="header__container">

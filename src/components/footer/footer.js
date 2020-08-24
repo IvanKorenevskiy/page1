@@ -6,7 +6,7 @@ import {Facebook, Twetter, Vk, Instagram, ReedMackay, Visa, Mastercard} from '..
 const Footer = () => {
   return (
   	<div className="root__footer footer">
-    	<div className="footer__top-string">
+    	<div className="footer__top-row">
     		<ul className="footer__nav-container nav-container">
     			<li className="footer__nav-item">
     				<div className="footer__service-name">Авиа и ЖД билеты</div>

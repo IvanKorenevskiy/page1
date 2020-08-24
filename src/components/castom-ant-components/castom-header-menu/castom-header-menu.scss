@@ -1,7 +1,8 @@
-	.ant-menu {
-		width: 24px;
-		border-right: none;
-		margin-right: 24px;
+.header__burger-menu {
+	width: 24px;
+	border-right: none;
+	margin-right: 24px;
+.ant-menu {
 		&-submenu-arrow {
 			display: none;
 		}
@@ -11,3 +12,9 @@
 			height: 24px !important;
 		}
 	}
+}
+@media (max-width: 640px) {
+	.header__burger-menu {
+		margin-right: 16px;
+	}
+}

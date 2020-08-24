@@ -1,8 +1,8 @@
-.swiper-wrapper {
+.header__nav-container {
 	.swiper-slide {
     	width: auto;
     	padding: 6px 23px 3px 23px;
-    	box-sizing: border-box;    	    	
+    	box-sizing: border-box;
     	&:last-child {
     		padding-right:0px;
     	}
@@ -22,15 +22,12 @@
 			}
 		}
   }
-}
-.swiper-container {
-	margin: 13px 0 13px 0;
 	.swiper-button-disabled {
 		opacity: 0 !important;
 	}
 	.swiper-button-prev {
 		background-color: white;
-		left: -3px;	
+		left: -3px;
 		&:after {
 			color: rgba(0, 0, 0, 0.56);
 			font-size: 14px;
@@ -39,11 +36,11 @@
 	}
 	.swiper-button-next {
 		background-color: white;
-		right: -3px;	
+		right: -3px;
 		&:after {
 			color: rgba(0, 0, 0, 0.56);
 			font-size: 14px;
 			font-weight: bold;
 		}
-	}	
+	}
 }

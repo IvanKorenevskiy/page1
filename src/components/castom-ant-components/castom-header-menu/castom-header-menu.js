@@ -10,7 +10,7 @@ const { SubMenu } = Menu;
 
 const CastomHeaderMenu = (props) => {
 	return (
-		<Menu className={`${props.styles} castom-header-menu`}>
+		<Menu className={`${props.className} castom-header-menu`}>
       <SubMenu
       	title={			          		
         	<span><BurgerMenu className="castom-header-menu__logo"/></span>

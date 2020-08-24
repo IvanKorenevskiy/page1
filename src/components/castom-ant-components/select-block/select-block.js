@@ -5,7 +5,7 @@ import {Select} from 'antd';
 
 const CastomSelect = (props) => {
   return (
-  	<div className={`${props.styles} castom-select`}>
+  	<div className={`${props.className} castom-select`}>
   		<span className="castom-select__text">{props.text}</span>
 		<Select placeholder={props.placeholder}>
 			<Option value="1">{props.value[0]}</Option>

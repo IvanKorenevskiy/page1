@@ -8,22 +8,27 @@ import CostForm from "./cost-form/cost-form";
 import CarInfoForm from "./car-info-form/car-info-form";
 import "./block-wrapper.scss";
 
-let masOfForms = [
-	<CarInfoForm/>, 
-	<InfoForm/>, 
-	<RouteForm/>,
-	<ContactForm/>,
-	<CostForm/>, 
-	<PaymentMethodForm/>, 
-	<AcceptBookingForm/>
-]
+
 const BlockWrapper = (props) => {
-    return ( 
-    <div className={`${props.styles} block-wrapper`}>  	
-    	{masOfForms[props.form]} 
-    </div> 	
-	); 
-}   	 
+  console.log (props.children.props.title);
+  if (props.children.props.title!=null) {
+    return (
+  	  <div className={`${props.className} block-wrapper`}>
+        <div className="block-wrapper__title">
+          {props.children.props.title}
+        </div>
+  	  	{props.children}
+  	  </div>
+  	);
+  }
+  else {
+    return (
+      <div className={`${props.className} block-wrapper`}>
+        {props.children}
+      </div>
+    );
+  }
+}
 
 
 export default BlockWrapper;

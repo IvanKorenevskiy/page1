@@ -6,7 +6,7 @@ import {Input} from 'antd';
 
 const CastomInput = (props) => {
   return (
-  	<div className={`${props.styles} castom-input`}>
+  	<div className={`${props.className} castom-input`}>
   		<span className="castom-input__text">{props.text}</span>
 		<Input placeholder={props.placeholder}/>
 	</div>	

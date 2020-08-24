@@ -1,7 +1,5 @@
-.root__footer {
-	margin-top: 74px;
-}
 .footer{
+	margin-top: 74px;
 	&__line {
 		height: 1px;
 		left: 0;
@@ -10,7 +8,7 @@
 		width: 100%;
 		background-color: rgba(0, 0, 0, 0.12);
 	}
-	&__top-string {
+	&__top-row {
 		display: flex;
 		justify-content: space-between;
 		white-space: nowrap;
@@ -93,7 +91,7 @@
 		margin-left: 0;
 		margin-right: auto;
 	}
-	.footer__top-string {
+	.footer__top-row {
 		display: block;
 	}
 	.footer__bottom-container {

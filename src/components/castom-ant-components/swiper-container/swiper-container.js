@@ -14,7 +14,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const CastomSwiper = (props) => {
   return (
     <Swiper
-      className={props.className}
+      className={`${props.className} castom-swiper`}
       slidesPerView={'auto'}
       spaceBetween={4.4}
       navigation

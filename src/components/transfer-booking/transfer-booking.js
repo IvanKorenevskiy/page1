@@ -9,9 +9,7 @@ import PaymentMethodForm from "../blocks/payment-method-form/payment-method-form
 import CostForm from "../blocks/cost-form/cost-form";
 import CarInfoForm from "../blocks/car-info-form/car-info-form";
 
-let b = [
-	1, 2, 3, 4, 5
-]
+
 
 const TransferBooking = (props) => {
   return (

@@ -8,7 +8,7 @@ import Footer from "./components/footer/footer";
 
 const App = () => {
   return (
-    <div className="root__wrapper wrapper">
+    <div className="wrapper">
       <Header/>
       <TransferBooking/>
       <Footer/>

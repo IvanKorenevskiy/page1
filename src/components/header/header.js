@@ -18,13 +18,6 @@ let MasOfHederNavItems = [
   {id: 9, title: "КОМАНДИРОВКИ"}
 ]
 
-let Mase = [
-  {id: 1, title: "ggg"},
-  {id: 2, title: "ergerg"},
-  {id: 3, title: "hyrj"},
-  {id: 4, title: "Тaerh"}
-]
-
 
 const Header = (props) => {
   return (

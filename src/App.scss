@@ -1,27 +1,31 @@
-
 @import "fonts/index";
-*{
-	font-family: Circe;
+
+* {
+  font-family: Circe;
 
 }
+
 .root__wrapper {
-	max-width: 1224px;
-	min-width: 912px;
-	width: 71.25%;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 1224px;
+  min-width: 912px;
+  width: 71.25%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 @media (max-width: 940px) {
-	.root__wrapper {
-		width: 95%;
-		min-width: 0;
-		margin-right: auto;
-		margin-left: auto;
-	}
+  .root__wrapper {
+    width: 95%;
+    min-width: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
+
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
+
 a {
-	color: #002688;
+  color: #002688;
 }

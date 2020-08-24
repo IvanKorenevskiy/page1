@@ -3,7 +3,7 @@ import React from "react";
 
 const CarInfoForm = (props) => {
   return (
-    <div className="car-info-form block-wrapper__body">
+    <div className="car-info-form block-wrapper__form">
       <div className="block-wrapper__body">
         <div className="car-info-form__justify-position">
           <ul className="car-info-form__list">

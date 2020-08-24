@@ -1,85 +1,76 @@
 import React from "react";
 import "./header.scss";
-import {Switch, Assignment, Mail, ArrowBack} from '../svg';
+import {ArrowBack, Assignment, Mail, Switch} from '../svg';
 import Image from '../img/image.png';
 import CastomSwiper from "../castom-ant-components/swiper-container/swiper-container";
 import CastomHeaderMenu from "../castom-ant-components/castom-header-menu/castom-header-menu";
 
 
-
 let MasOfHederNavItems = [
-	{id:1, title: "ПЕРЕЛЁТЫ"},
-	{id:2, title: "ОТЕЛИ"},
-	{id:3, title: "ЖД"},
-	{id:4, title: "ТРАНСФЕРЫ"},
-	{id:5, title: "АЭРОЭКСПРЕСС"},
-	{id:6, title: "ВИЗЫ"},
-	{id:7, title: "СТРАХОВКИ"},
-	{id:8, title: "ЛЕНИВЫЙ ЗАКАЗ"},
-	{id:9, title: "КОМАНДИРОВКИ"}
+  {id: 1, title: "ПЕРЕЛЁТЫ"},
+  {id: 2, title: "ОТЕЛИ"},
+  {id: 3, title: "ЖД"},
+  {id: 4, title: "ТРАНСФЕРЫ"},
+  {id: 5, title: "АЭРОЭКСПРЕСС"},
+  {id: 6, title: "ВИЗЫ"},
+  {id: 7, title: "СТРАХОВКИ"},
+  {id: 8, title: "ЛЕНИВЫЙ ЗАКАЗ"},
+  {id: 9, title: "КОМАНДИРОВКИ"}
 ]
 
 let Mase = [
-	{id:1, title: "ggg"},
-	{id:2, title: "ergerg"},
-	{id:3, title: "hyrj"},
-	{id:4, title: "Тaerh"}
+  {id: 1, title: "ggg"},
+  {id: 2, title: "ergerg"},
+  {id: 3, title: "hyrj"},
+  {id: 4, title: "Тaerh"}
 ]
 
 
 const Header = (props) => {
   return (
-  	<div className="header">
-    	<div className="header__top-row">
-				<CastomHeaderMenu 
-					className="header__burger-menu"
-					items={MasOfHederNavItems}
-				/>
-				<Switch className="header__logo"/>
-  			<ul className="header__tools-container tools-container" scroll-left="100px">
-    			<a className="tools-container__item" href="#!">
-    				<Assignment className="tools-container__logo"/>
-    				<span className="tools-container__name">Заказы</span>
-    			</a>
-    			<a className="tools-container__item" href="#!">
-    				<Mail className="tools-container__logo"/>
-    				<span className="tools-container__name">Сообщения</span>
-    			</a>
-    			<a className="tools-container__item" href="#!">
-    				<img className="tools-container__profile-logo" src={Image}/>
-    				<span className="tools-container__name">Константин Константинопольский</span>
-    			</a>
-    		</ul>
-    	</div>	
-			<CastomSwiper 
-				className = "header__nav-container"
-				items={MasOfHederNavItems}
-			/>
-    	<div className="header__background-row"></div>
-	    <div className="header__bottom-row">
-    		<ArrowBack className="header__arrow-back"/>
-    		<span className="header__arrow-back--text">Назад к выдаче</span>
-	    	<div className="header__container">
-	    		<div className="header__info brief-client-info">
-	    			Санкт-Петербург — Москва, 3 пассажира из аэропорта <br/>в отель 20.09.2019
-	    		</div>
-	    		<div className="header__change-search">
-	    			Изменить поиск
-	    		</div>
-	    	</div>		    	
-	    </div>
+    <div className="header">
+      <div className="header__top-row">
+        <CastomHeaderMenu
+          className="header__burger-menu"
+          items={MasOfHederNavItems}
+        />
+        <Switch className="header__logo"/>
+        <ul className="header__tools-container tools-container" scroll-left="100px">
+          <a className="tools-container__item" href="#!">
+            <Assignment className="tools-container__logo"/>
+            <span className="tools-container__name">Заказы</span>
+          </a>
+          <a className="tools-container__item" href="#!">
+            <Mail className="tools-container__logo"/>
+            <span className="tools-container__name">Сообщения</span>
+          </a>
+          <a className="tools-container__item" href="#!">
+            <img className="tools-container__profile-logo" src={Image}/>
+            <span className="tools-container__name">Константин Константинопольский</span>
+          </a>
+        </ul>
+      </div>
+      <CastomSwiper
+        className="header__nav-container"
+        items={MasOfHederNavItems}
+      />
+      <div className="header__background-row"></div>
+      <div className="header__bottom-row">
+        <ArrowBack className="header__arrow-back"/>
+        <span className="header__arrow-back--text">Назад к выдаче</span>
+        <div className="header__container">
+          <div className="header__info brief-client-info">
+            Санкт-Петербург — Москва, 3 пассажира из аэропорта <br/>в отель 20.09.2019
+          </div>
+          <div className="header__change-search">
+            Изменить поиск
+          </div>
+        </div>
+      </div>
     </div>
-	);    	
+  );
 }
 export default Header;
-
-
-
-
-
-
-
-
 
 
 /*const He = (props) => {
@@ -88,7 +79,7 @@ export default Header;
         	<div className="header__top-string">
 	        		<Menu className="burger-menu burger-menu-wrapper">
 				        <SubMenu
-				          	title={			          		
+				          	title={
 				            	<span><BurgerMenu className="burger-menu__logo"/></span>
 				          	}
 				        >
@@ -102,7 +93,7 @@ export default Header;
 				          <Menu.Item key="8">ЛЕНИВЫЙ ЗАКАЗ</Menu.Item>
 				          <Menu.Item key="9">КОМАНДИРОВКИ</Menu.Item>
 				        </SubMenu>
-				    </Menu>    			
+				    </Menu>
 					<Switch className="header__logo"/>
         		<ul className="header__tools-container tools-container" scroll-left="100px">
         			<a className="tools-container__item" href="#!">
@@ -136,7 +127,7 @@ export default Header;
 			      <Item>СТРАХОВКИ</Item>
 			      <Item>ЛЕНИВЫЙ ЗАКАЗ</Item>
 			      <Item>КОМАНДИРОВКИ</Item>
-			    </Carousel> 
+			    </Carousel>
 		    	<ul className="nav-container__list">
 		    		<li className="header__nav-item">ПЕРЕЛЁТЫ</li>
 		    		<li className="header__nav-item">ОТЕЛИ</li>
@@ -159,10 +150,10 @@ export default Header;
 		    		<div className="header__change-search">
 		    			Изменить поиск
 		    		</div>
-		    	</div>		    	
+		    	</div>
 		    </div>
 
       	</div>
-	    );    	
+	    );
   }
   */

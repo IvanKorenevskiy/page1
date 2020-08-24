@@ -1,20 +1,22 @@
 .ant-time-picker-input {
-	font-size: 16px;
-	letter-spacing: 0.15px;
-	border: 2px solid #d9d9d9;
-	height: 48px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  border: 2px solid #d9d9d9;
+  height: 48px;
 }
+
 .ant-time-picker {
-	width: 100%;
+  width: 100%;
 }
+
 .castom-time-picker__text {
-	position: absolute;
-	padding: 0 4px 0 4px;
-	bottom: 39px;
-	left: 12px;
-	z-index: 1;
-	background-color: white;
-	font-size: 12px;
-	letter-spacing: 0.4px;
-	color: rgba(0, 0, 0, 0.56);
+  position: absolute;
+  padding: 0 4px 0 4px;
+  bottom: 39px;
+  left: 12px;
+  z-index: 1;
+  background-color: white;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 0.56);
 }

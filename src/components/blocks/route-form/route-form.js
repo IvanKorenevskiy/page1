@@ -13,7 +13,7 @@ const RouteForm = (props) => {
           Отправление: Санкт-Петербург (Россия)
         </div>
         <div className="block-wrapper__twin-container">
-          <div className="block-wrapper__twin-element">
+          <div className="block-wrapper__twin-element block-wrapper__twin-element--padding">
             <CastomDatePicker
               placeholder="2010-01-01"
               text="Дата"
@@ -70,13 +70,13 @@ const RouteForm = (props) => {
           <CastomSelect
             placeholder="Выберите название"
             text="Пункт прибытия *"
-            className="block-wrapper__input block-wrapper__input--twin-element"
+            className="block-wrapper__input block-wrapper__input--twin-element block-wrapper__input--padding"
             value={["Отель", "Палатка", "Другое место"]}
           />
           <CastomInput
             placeholder="Введите название"
             text="Название отеля"
-            className="block-wrapper__input block-wrapper__input--twin-element"
+            className="block-wrapper__input block-wrapper__input--twin-element block-wrapper__input--padding"
           />
         </div>
         <div className="route-form__warning-text">

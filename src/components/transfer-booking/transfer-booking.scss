@@ -1,6 +1,4 @@
 .transfer-booking {
-	overflow: hidden;
-	position: relative;
 	display: flex;
 	&__title {
 		margin: 31px 0 18px 0;
@@ -9,7 +7,7 @@
 		font-weight: 600;
 	}
 	&__left-side {
-		width: 66%;		
+		width: 66%;
 		margin-right: 24px;
 	}
 	&__right-side {
@@ -27,11 +25,11 @@
 			display: none;
 		}
 		.transfer-booking__left-side {
-			width: 100%; 
+			width: 100%;
 			margin-right: 0;
 		}
 		.transfer-booking__right-side {
-			display: none;		
+			display: none;
 		}
 	}
 }

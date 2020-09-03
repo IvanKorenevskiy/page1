@@ -7,6 +7,13 @@
 
 .ant-time-picker {
   width: 100%;
+  .ant-time-picker-icon {
+    margin-top: -5px;
+    right: 15px;
+    .ant-time-picker-clock-icon {
+      color: rgba(0, 0, 0, 0.56);
+    }
+  }
 }
 
 .castom-time-picker__text {

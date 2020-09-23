@@ -15,13 +15,13 @@ const RouteForm = (props) => {
         <div className="block-wrapper__twin-container">
           <div className="block-wrapper__twin-element block-wrapper__twin-element--padding">
             <CastomDatePicker
-              placeholder="2010-01-01"
+              placeholder="1 янв, пн"
               text="Дата"
               className="block-wrapper__input block-wrapper__input--calc-width"
             />
             <CastomTimePicker
               format='HH:mm'
-              placeholder="ЧЧ:ММ"
+              placeholder="00:00"
               text="Время"
               className="block-wrapper__input block-wrapper__input--fixed-width"
             />
@@ -30,7 +30,8 @@ const RouteForm = (props) => {
         <div className="block-wrapper__twin-container">
           <CastomSelect
             placeholder="Выберите название"
-            text="Аэропорт прилета *"
+            text="Аэропорт прилета"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element"
             value={["Домодедово", "Пулково", "Адлер"]}
           />
@@ -42,7 +43,7 @@ const RouteForm = (props) => {
             />
             <CastomTimePicker
               format='HH:mm'
-              placeholder="ЧЧ:ММ"
+              placeholder="00:00"
               text="Время"
               className="block-wrapper__input block-wrapper__input--fixed-width"
             />
@@ -51,12 +52,14 @@ const RouteForm = (props) => {
         <div className="block-wrapper__twin-container">
           <CastomInput
             placeholder="Введите название"
-            text="Город вылета *"
+            text="Город вылета"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element"
           />
           <CastomSelect
             placeholder="Выберите название"
-            text="Аэропорт вылета *"
+            text="Аэропорт вылета"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element"
             value={["Домодедово", "Пулково", "Адлер"]}
           />
@@ -69,7 +72,8 @@ const RouteForm = (props) => {
         <div className="block-wrapper__twin-container">
           <CastomSelect
             placeholder="Выберите название"
-            text="Пункт прибытия *"
+            text="Пункт прибытия"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element block-wrapper__input--padding"
             value={["Отель", "Палатка", "Другое место"]}
           />

@@ -6,10 +6,16 @@ import {SelectArrow} from '../../svg';
 
 let suffixIcon = <SelectArrow className="castom-select__select-arrow"/>
 
+function AddStar () {
+  return (
+    <span className="red-star">*</span>
+  )
+}
+
 const CastomSelect = (props) => {
   return (
     <div className={`${props.className} castom-select`}>
-      <span className="castom-select__text">{props.text}</span>
+      <span className="castom-select__text">{props.text} {props.important === "true" ? <AddStar/>:null}</span>
       <Select
         placeholder={props.placeholder}
         suffixIcon= {suffixIcon}

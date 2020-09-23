@@ -128,12 +128,16 @@
       margin-right: auto;
       margin-left: 12px;
       z-index: 1;
+      font-size: 16px;
+      letter-spacing: 0.15px;
     }
 
     .header__container {
       z-index: 1;
       font-size: 14px;
-      margin-right: 43px;
+      letter-spacing: 0.25px;
+      padding-right: 3%;
+      width: 392px;
 
       .header__change-search {
         margin-top: 5px;
@@ -142,6 +146,10 @@
   }
 
   @media (max-width: 940px) {
+    .header__container {
+      width: 284px;
+      //padding-right: 3px;
+    }
     .swiper-container {
       display: none;
     }
@@ -170,7 +178,7 @@
       }
     }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .tools-container__item:last-child {
       .tools-container__name {
         display: none;

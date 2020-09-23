@@ -191,6 +191,7 @@
     }
 
     &__comment {
+      letter-spacing: 0.25px;
       display: block;
       padding-top: 6px;
       margin-left: 37px;
@@ -255,10 +256,19 @@
       }
     }
   }
-
+  .ant-btn-primary {
+    background-color: #002688;
+    &:active {
+      background-color: white;
+      color: black;
+    }
+  }
+  .car-info-form__item-bold {
+    font-weight: bold;
+  }
   @media (max-width: 940px) {
     .car-info-form__justify-position {
-      display: flex;
+      display: flex !important;
       justify-content: space-between;
       align-items: flex-start;
       margin-top: 5px;
@@ -267,7 +277,7 @@
       width: calc(50% - 12px);
     }
   }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .block-wrapper__twin-container .block-wrapper__twin-element--last-tool-padding {
       padding-top: 24px;
     }
@@ -287,7 +297,7 @@
       }
     }
     .car-info-form__justify-position {
-      display: block;
+      display: block !important;
       margin-top: 5px;
     }
     .car-info-form__list {
@@ -334,3 +344,19 @@
   }
 }
 
+@media (max-width: 320px) {
+  .transfer-booking__block {
+    .block-wrapper__title {
+      padding-right:16px !important;
+      padding-left: 16px !important;
+    }
+    .block-wrapper__body {
+      padding-right:16px !important;
+      padding-left: 16px !important;
+    }
+    .block-wrapper__footer {
+      padding-right:16px !important;
+      padding-left: 16px !important;
+    }
+  }
+}

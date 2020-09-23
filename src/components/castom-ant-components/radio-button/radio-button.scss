@@ -1,8 +1,18 @@
 .block-wrapper {
+  .ant-radio-checked .ant-radio-inner {
+    border: 1px solid #002688;
+  }
+  .ant-radio-inner::after {
+    background-color: #002688;
+  }
   .ant-radio {
     margin-right: 8px;
     margin-left: 5px;
-
+    &:hover {
+      .ant-radio-inner {
+        border: 1px solid #002688 !important;
+      }
+    }
     .ant-radio-inner {
       transform: scale(1.2);
     }

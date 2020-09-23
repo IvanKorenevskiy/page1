@@ -31,19 +31,22 @@ const InfoForm = (props) => {
           </div>
           <CastomInput
             placeholder="Введите фамилию"
-            text="Фамилия *"
+            text="Фамилия"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element"
           />
         </div>
         <div className="block-wrapper__twin-container">
           <CastomInput
             placeholder="Введите имя"
-            text="Имя *"
+            text="Имя"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element"
           />
           <CastomInput
             placeholder="+0 000 000-00-00"
-            text="Телефон *"
+            text="Телефон"
+            important = "true"
             className="block-wrapper__input block-wrapper__input--twin-element"
           />
         </div>

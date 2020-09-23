@@ -1,7 +1,10 @@
 import React from "react";
 import "./date-block.scss";
 import {DatePicker} from 'antd';
+import {Today} from '../../svg';
 
+
+let suffixIcon = <Today className="castom-date-picker__select-arrow"/>
 
 const CastomDatePicker = (props) => {
   return (
@@ -9,6 +12,7 @@ const CastomDatePicker = (props) => {
       <span className="castom-date-picker__text">{props.text}</span>
       <DatePicker
         placeholder={props.placeholder}
+        suffixIcon={suffixIcon}
       />
     </div>
   );

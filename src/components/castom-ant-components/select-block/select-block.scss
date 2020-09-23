@@ -9,7 +9,15 @@
   letter-spacing: 0.4px;
   color: rgba(0, 0, 0, 0.56);
 }
-
+.ant-select-open, .ant-select-selection:hover {
+  .ant-select-selection {
+    border: 2px solid #40a9ff !important;
+  }
+}
+.ant-select-selection:hover, .ant-select-selection:focus{
+  border-color: #40a9ff;
+  border-right-width: 2px !important;
+}
 .ant-select {
   width: 100%;
 
@@ -29,4 +37,10 @@
     right: 17px;
   }
 }
-
+.block-wrapper__input:hover, .block-wrapper__input:focus {
+  .castom-select__text {
+    color: #40a9ff !important;
+        webkit-transition: all .4s cubic-bezier(.645,.045,.355,1);
+        transition: all .4s cubic-bezier(.645,.045,.355,1);
+  }
+}

@@ -1,10 +1,25 @@
 .block-wrapper {
+  .castom-check-box:hover {
+    .ant-checkbox-inner {
+      border-color: #002688;
+    }
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #002688;
+    border-color: #002688;
+  }
   .ant-checkbox {
     margin-right: 8px;
     margin-left: 5px;
 
     .ant-checkbox-inner {
       transform: scale(1.2);
+
+    }
+  }
+  .ant-checkbox-checked {
+    &:after {
+      border: 1px solid #002688;
     }
   }
 }

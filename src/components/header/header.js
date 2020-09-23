@@ -53,7 +53,7 @@ const Header = (props) => {
         <span className="header__arrow-back--text">Назад к выдаче</span>
         <div className="header__container">
           <div className="header__info brief-client-info">
-            Санкт-Петербург — Москва, 3 пассажира из аэропорта <br/>в отель 20.09.2019
+            Санкт-Петербург — Москва, 3 пассажира из аэропорта в отель 20.09.2019
           </div>
           <div className="header__change-search">
             Изменить поиск

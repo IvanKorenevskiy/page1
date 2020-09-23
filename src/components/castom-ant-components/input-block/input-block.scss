@@ -5,7 +5,10 @@
   border: 2px solid #d9d9d9;
   height: 48px;
 }
-
+.ant-input:hover, .ant-input:focus {
+    border-color: #40a9ff;
+    border-right-width: 2px !important;
+}
 .castom-input__text {
   position: absolute;
   padding: 0 4px 0 4px;

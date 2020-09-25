@@ -51,6 +51,7 @@ const Header = (props) => {
       <div className="header__bottom-row">
         <ArrowBack className="header__arrow-back"/>
         <span className="header__arrow-back--text">Назад к выдаче</span>
+        <span className="header__arrow-back--media-only-text">Назад</span>
         <div className="header__container">
           <div className="header__info brief-client-info">
             Санкт-Петербург — Москва, 3 пассажира из аэропорта в отель 20.09.2019

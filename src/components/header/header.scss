@@ -54,6 +54,10 @@
 
     .tools-container__item {
       margin-right: 24px;
+      color: rgba(0, 0, 0, 0.88);
+      &:last-child {
+        margin-right: 18px;
+      }
     }
   }
 
@@ -136,7 +140,7 @@
       z-index: 1;
       font-size: 14px;
       letter-spacing: 0.25px;
-      padding-right: 3%;
+      padding-right: 2%;
       width: 392px;
 
       .header__change-search {
@@ -145,11 +149,18 @@
     }
   }
 
-  @media (max-width: 940px) {
+  @media (max-width: 960px) {
+    .header__container {
+      width: 288px;
+    }
+  }
+  @media (max-width: 640px) {
     .header__container {
       width: 284px;
-      //padding-right: 3px;
     }
+  }
+
+  @media (max-width: 959px) {
     .swiper-container {
       display: none;
     }
@@ -166,7 +177,8 @@
       margin-right: 2px;
 
       &:last-child {
-        margin-left: 16px;
+        margin-left: 10px;
+        margin-right: 18px;
       }
     }
     .tools-container__name {
@@ -179,7 +191,27 @@
     }
   }
   @media (max-width: 639px) {
+    .header__container {
+      width: auto;
+      letter-spacing: 1.2px;
+      padding-right: 0px;
+    }
+    .header__arrow-back--text {
+      display: none;
+    }
+    .header__arrow-back--media-only-text {
+      margin-right: auto;
+      margin-left: 12px;
+      z-index: 1;
+      font-size: 16px;
+      letter-spacing: 0.15px;
+    }
+    .tools-container__profile-logo {
+      margin-right: 0;
+    }
     .tools-container__item:last-child {
+      margin-right: 0;
+
       .tools-container__name {
         display: none;
       }

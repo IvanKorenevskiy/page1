@@ -108,7 +108,7 @@
   }
 
   .car-info-form .block-wrapper__body {
-    padding: 10px 24px 17px 24px;
+    padding: 10px 24px 14px 24px;
 
     &:last-child {
       padding: 4px 24px 17px 24px;
@@ -195,6 +195,7 @@
       display: block;
       padding-top: 6px;
       margin-left: 37px;
+      line-height: 20px;
     }
 
     &__item {
@@ -204,6 +205,9 @@
       line-height: 24px;
       letter-spacing: 0.15px;
       color: rgba(0, 0, 0, 0.88);
+      &:last-child {
+        padding-top: 20px;
+      }
     }
   }
 
@@ -234,6 +238,9 @@
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.25px;
+    }
+    .block-wrapper__notification {
+      padding-top: 5px;
     }
   }
 
@@ -277,7 +284,37 @@
       width: calc(50% - 12px);
     }
   }
+  @media (max-width: 649px) {
+    .car-info-form__justify-position {
+      margin-top: 0px;
+    }
+  }
   @media (max-width: 639px) {
+    .accept-booking-form__button {
+      margin-top: 16px !important;
+    }
+    .payment-method-form__item:last-child {
+      padding-top: 16px;
+    }
+    .payment-method-form__link {
+      padding-top: 10px;
+      padding-bottom: 2px;
+    }
+    .car-info-form .block-wrapper__body {
+      padding-top: 5px;
+    }
+    .block-wrapper__title {
+      padding-right:16px !important;
+      padding-left: 16px !important;
+    }
+    .block-wrapper__body {
+      padding-right:16px !important;
+      padding-left: 16px !important;
+    }
+    .block-wrapper__footer {
+      padding-right:16px !important;
+      padding-left: 16px !important;
+    }
     .block-wrapper__twin-container .block-wrapper__twin-element--last-tool-padding {
       padding-top: 24px;
     }
@@ -295,6 +332,12 @@
       .block-wrapper__input--twin-element {
         width: 100%;
       }
+    }
+    .route-form .block-wrapper__twin-container .block-wrapper__twin-element:last-child {
+      padding-top: 24px;
+    }
+    .route-form .block-wrapper__input--padding:last-child {
+      padding-top: 24px !important;
     }
     .car-info-form__justify-position {
       display: block !important;
@@ -340,23 +383,6 @@
       padding: 0;
       width: 24px;
       height: 24px;
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .transfer-booking__block {
-    .block-wrapper__title {
-      padding-right:16px !important;
-      padding-left: 16px !important;
-    }
-    .block-wrapper__body {
-      padding-right:16px !important;
-      padding-left: 16px !important;
-    }
-    .block-wrapper__footer {
-      padding-right:16px !important;
-      padding-left: 16px !important;
     }
   }
 }

@@ -8,9 +8,14 @@
     background-color: #002688;
     border-color: #002688;
   }
+  .block-wrapper__checkbox {
+    text-indent: -37px;
+    margin-left: 37px !important;
+  }
   .ant-checkbox {
     margin-right: 8px;
     margin-left: 5px;
+
 
     .ant-checkbox-inner {
       transform: scale(1.2);
